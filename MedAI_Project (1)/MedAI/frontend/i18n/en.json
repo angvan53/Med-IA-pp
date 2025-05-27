@@ -1,0 +1,9 @@
+{
+  "upload_label": "Upload Image:",
+  "submit_button": "Submit",
+  "result_label": "Result",
+  "image_type": "Image Type",
+  "xray": "X-Ray",
+  "dicom": "DICOM",
+  "select_language": "Select Language"
+}

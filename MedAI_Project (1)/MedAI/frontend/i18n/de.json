@@ -1,0 +1,9 @@
+{
+  "upload_label": "Bild hochladen:",
+  "submit_button": "Absenden",
+  "result_label": "Ergebnis",
+  "image_type": "Bildtyp",
+  "xray": "Röntgen",
+  "dicom": "DICOM",
+  "select_language": "Sprache wählen"
+}

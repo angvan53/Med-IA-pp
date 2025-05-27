@@ -1,0 +1,171 @@
+/* Genel ayarlar */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f8fa;
+  color: #2d3e50;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d0d7de;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+  user-select: none;
+}
+
+h1 {
+  flex-grow: 1;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin: 0;
+  color: #0984e3;
+}
+
+.lang-select {
+  padding: 7px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1.5px solid #b2bec3;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.lang-select:hover,
+.lang-select:focus {
+  border-color: #0984e3;
+  outline: none;
+}
+
+/* Main ve Form */
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.form-container {
+  background-color: white;
+  padding: 25px 30px;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(9, 132, 227, 0.15);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+input[type="file"],
+select {
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1.5px solid #b2bec3;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="file"]:focus,
+select:focus {
+  outline: none;
+  border-color: #0984e3;
+}
+
+button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  background-color: #0984e3;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(9, 132, 227, 0.3);
+  transition: background-color 0.25s ease;
+}
+
+button:hover,
+button:focus {
+  background-color: #065aab;
+  outline: none;
+}
+
+/* Sonuç alanı */
+.result-container {
+  margin-top: 30px;
+  max-width: 480px;
+  background-color: white;
+  padding: 20px 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07);
+  min-height: 100px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #2c3e50;
+  white-space: pre-wrap;
+}
+
+/* Hata stili */
+.result-container.error {
+  color: #e74c3c;
+  font-weight: 700;
+  border: 1.5px solid #e74c3c;
+  background-color: #fdecea;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 1px solid #d0d7de;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+/* Responsive */
+@media (max-width: 540px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .form-container {
+    padding: 20px;
+    width: 100%;
+  }
+}

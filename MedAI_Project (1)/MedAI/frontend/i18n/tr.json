@@ -1,0 +1,9 @@
+{
+  "upload_label": "Görüntü Yükle:",
+  "submit_button": "Gönder",
+  "result_label": "Sonuç",
+  "image_type": "Görüntü Türü",
+  "xray": "X-Ray",
+  "dicom": "DICOM",
+  "select_language": "Dil Seç"
+}

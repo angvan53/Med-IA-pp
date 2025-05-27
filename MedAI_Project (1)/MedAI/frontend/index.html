@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MedAI - Tıbbi Görüntü Analizi</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <img src="assets/images/logo.png" alt="Muson Mühendislik Logo" class="logo" />
+        <h1>MedAI Görüntü Analizi</h1>
+
+        <div class="custom-select-wrapper">
+            <select id="langSelect" aria-label="Dil Seçimi" class="lang-select">
+                <option value="tr">Türkçe</option>
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+            </select>
+        </div>
+    </header>
+
+
+    <main>
+        <form id="uploadForm" class="form-container" aria-label="Görüntü Yükleme Formu">
+            <label for="imageInput" id="label-upload">Görüntü Yükle:</label>
+            <input type="file" id="imageInput" name="image" accept=".dcm,.png,.jpg,.jpeg" required />
+
+            <label for="typeSelect">Görüntü Türü:</label>
+            <select id="typeSelect" name="type">
+                <option value="xray">X-Ray</option>
+                <option value="dicom">DICOM</option>
+            </select>
+
+            <button type="submit">Gönder</button>
+        </form>
+
+        <div id="result" class="result-container" aria-live="polite"></div>
+    </main>
+
+    <footer>
+        <p>© 2025 Prof. Dr. Mustafa Okutan | Muson Mühendislik | Yalnızca Doktor Kullanımı İçindir</p>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

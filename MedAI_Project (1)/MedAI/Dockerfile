@@ -1,0 +1,1 @@
+# Dockerfile içeriği buraya eklenecek.
