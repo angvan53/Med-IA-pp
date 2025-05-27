@@ -12,7 +12,7 @@ Moderne Weboberfläche
 
 Nutzung zur ärztlichen Entscheidungsunterstützung
 
-Projektinhaber: Dr. Mustafa Okutan
+Projektinhaber: Dr. M O
 
 Unterstützt durch Muson Mühendislik
 
